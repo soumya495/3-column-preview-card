@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+
+    --tranWhite: hsla(0, 0%, 100%, 0.75);
+    --vLightGray: hsl(0, 0%, 95%);
+}
+
+body{
+    color: var(--tranWhite);
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vLightGray);
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 5rem 0;
+    max-width: 360px;
+}
+
+section{
+    padding: 3rem;
+    padding-bottom: 3.5rem;
+}
+
+header{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--vLightGray);
+    padding: 1rem 0;
+}
+
+p{
+    font-size: 15px;
+    padding: 1rem 0;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.container a{
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    background-color: var(--vLightGray);
+    border: 2px solid var(--vLightGray);
+}
+
+.container section:nth-child(1) a{
+    color: var(--Brightorange);
+}
+
+.container section:nth-child(2) a{
+    color: var(--Darkcyan);
+}
+
+.container section:nth-child(3) a{
+    color: var(--Verydarkcyan);
+}
+
+.sec-1{
+    background-color: var(--Brightorange);
+}
+
+.sec-2{
+    background-color: var(--Darkcyan);
+}
+
+.sec-3{
+    background-color: var(--Verydarkcyan);
+}
+
+.attribution{
+    margin-bottom: 5px;
+    color: var(--Verydarkcyan);
+}
+
+.container a:hover{
+    background: none;
+    border: 2px solid var(--vLightGray);
+}
+
+.container section a:hover{
+    color: var(--vLightGray);
+}
+
+@media (max-width: 320px){
+    .container a{
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+@media (min-width: 1200px){
+
+    img{
+        width: 65px;
+        height: 40px;
+    }
+
+    .container{
+        max-width: unset;
+        width: 1000px;
+        height: 500px;
+        display: flex;
+    }
+
+    p{
+        margin-bottom: 5rem;
+    }
+
+    header{
+        font-size: 2.5rem;
+    }
+
+    section{
+        padding: 3rem 3.5rem;
+    }
+
+}
